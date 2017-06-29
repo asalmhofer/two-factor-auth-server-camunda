@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn.xsd" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="definitions_037nbf0" name="definitions" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="check-user" name="check-user">
+    <decisionTable id="decisionTable" hitPolicy="FIRST">
+      <input id="input1" label="User name" camunda:inputVariable="">
+        <inputExpression id="inputExpression1" typeRef="string">        <text>username</text>
+</inputExpression>
+      </input>
+      <input id="InputClause_0ip3l9q" label="Password" camunda:inputVariable="">
+        <inputExpression id="LiteralExpression_076wyln" typeRef="string">        <text>password</text>
+</inputExpression>
+      </input>
+      <output id="output1" label="Login Result" name="loginResult" typeRef="boolean" />
+      <rule id="row-74593086-1">
+        <inputEntry id="UnaryTests_00janrc">        <text><![CDATA["user1"]]></text>
+</inputEntry>
+        <inputEntry id="UnaryTests_05vc6sb">        <text><![CDATA["12345678"]]></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_1bi4tyl">        <text>true</text>
+</outputEntry>
+      </rule>
+      <rule id="row-74593086-2">
+        <inputEntry id="UnaryTests_14i0mz8">        <text><![CDATA["user2"]]></text>
+</inputEntry>
+        <inputEntry id="UnaryTests_06vvwz6">        <text><![CDATA["87654321"]]></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_13ja1p6">        <text>true</text>
+</outputEntry>
+      </rule>
+      <rule id="row-74593086-3">
+        <inputEntry id="UnaryTests_1wc0ai6">        <text></text>
+</inputEntry>
+        <inputEntry id="UnaryTests_0g4dsav">        <text></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_0h64m4m">        <text>false</text>
+</outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>

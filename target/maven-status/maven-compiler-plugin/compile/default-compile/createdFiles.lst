@@ -1,0 +1,6 @@
+net\salmhofer\auth\SendPinDelegate.class
+net\salmhofer\auth\SendPinDelegate$1.class
+net\salmhofer\auth\GeneratePinDelegate.class
+net\salmhofer\auth\SendMailDelegate$1.class
+net\salmhofer\auth\SendMailDelegate.class
+net\salmhofer\auth\TwoFactorAuthApplication.class
